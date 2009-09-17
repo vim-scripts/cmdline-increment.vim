@@ -1,0 +1,32 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2790
+
+Increment last appearing number in commandline-mode command with Control-a ,
+and decrement with Control-x .
+
+    <C-a> increment commandline last appearing number.
+    <C-x> decrement commandline last appearing number.
+
+
+------------------------------------------------------------------------------
+[Usage]
+
+1.  Enter commandline mode.
+2.  Enter next command.
+
+    :edit workfile_1.txt
+
+3.  And Press Control-a , or press Control-x .
+
+
+------------------------------------------------------------------------------
+[Customized Mapping]
+
+If you will customize increment, decrement mapping,
+add put these code to your vimrc .
+
+    " (for example)
+    " increment with Shift-Up
+    cmap <S-Up> <Plug>IncrementCommandLineNumber
+    " decrement with Shift-Down
+    cmap <S-Down> <Plug>DecrementCommandLineNumber
+
